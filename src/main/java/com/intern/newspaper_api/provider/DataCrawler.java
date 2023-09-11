@@ -20,6 +20,7 @@ import java.io.IOException;
 import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -94,6 +95,7 @@ public class DataCrawler {
 //                    } // New category
                 article.setCategory(category);
             }
+            System.out.println("Crawl categories at " + new Date());
         } catch (Exception e) {
             logger.error(e.toString());
         }
@@ -137,6 +139,7 @@ public class DataCrawler {
             for (Article a : articles) {
                 articleService.save(a);
             }
+            System.out.println("Crawl articles at " + new Date());
         } catch (Exception e) {
             logger.error(e.toString());
         }
