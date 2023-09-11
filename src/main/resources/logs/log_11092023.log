@@ -173,3 +173,98 @@ Action:
 
 Consider defining a bean of type 'com.intern.newspaper_api.service.ICategoryService' in your configuration.
 
+2023-09-11 09:50:32 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.intern.newspaper_api.NewspaperApiApplication required a bean of type 'com.intern.newspaper_api.service.ICategoryService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.intern.newspaper_api.service.ICategoryService' in your configuration.
+
+2023-09-11 09:50:54 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.intern.newspaper_api.NewspaperApiApplication required a bean of type 'com.intern.newspaper_api.service.ICategoryService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.intern.newspaper_api.service.ICategoryService' in your configuration.
+
+2023-09-11 09:51:10 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.intern.newspaper_api.NewspaperApiApplication required a bean of type 'com.intern.newspaper_api.service.ICategoryService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.intern.newspaper_api.service.ICategoryService' in your configuration.
+
+2023-09-11 09:54:51 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.intern.newspaper_api.NewspaperApiApplication required a bean of type 'com.intern.newspaper_api.service.ICategoryService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.intern.newspaper_api.service.ICategoryService' in your configuration.
+
+2023-09-11 09:56:33 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.intern.newspaper_api.NewspaperApiApplication required a bean of type 'com.intern.newspaper_api.service.ICategoryService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.intern.newspaper_api.service.ICategoryService' in your configuration.
+
+2023-09-11 10:16:57 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2023-09-11 10:23:07 [restartedMain] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: prepared statement "S_1" already exists
+2023-09-11 10:23:07 [restartedMain] ERROR c.i.n.provider.DataCrawler - org.springframework.dao.InvalidDataAccessResourceUsageException: JDBC exception executing SQL [select c1_0."id",c1_0."name",c1_0."slug",c1_0."url" from "category" c1_0 where c1_0."slug"=?] [ERROR: prepared statement "S_1" already exists] [n/a]; SQL [n/a]
+2023-09-11 10:23:07 [restartedMain] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: prepared statement "S_2" already exists
+2023-09-11 10:23:07 [restartedMain] ERROR c.i.n.provider.DataCrawler - org.springframework.dao.InvalidDataAccessResourceUsageException: JDBC exception executing SQL [select a1_0."id" from "article" a1_0 where a1_0."slug"=? fetch first ? rows only] [ERROR: prepared statement "S_2" already exists] [n/a]; SQL [n/a]
+2023-09-11 10:27:25 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: prepared statement "S_2" already exists
+2023-09-11 10:27:25 [main] ERROR c.i.n.provider.DataCrawler - org.springframework.dao.InvalidDataAccessResourceUsageException: JDBC exception executing SQL [select a1_0."id" from "article" a1_0 where a1_0."slug"=? fetch first ? rows only] [ERROR: prepared statement "S_2" already exists] [n/a]; SQL [n/a]

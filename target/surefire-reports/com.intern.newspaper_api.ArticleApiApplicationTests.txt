@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.intern.newspaper_api.ArticleApiApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 84.883 s - in com.intern.newspaper_api.ArticleApiApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.174 s - in com.intern.newspaper_api.ArticleApiApplicationTests
