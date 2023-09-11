@@ -19,7 +19,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/newspaper/category")
-@CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
+@CrossOrigin(origins = "${CORS_URL}", maxAge = 3600)
 public class CategoryController {
     private final ICategoryService categoryService;
     private final ModelMapper modelMapper;
@@ -44,7 +44,7 @@ public class CategoryController {
             responseModel.setStatus("error");
             responseModel.setMessage(e.getMessage());
             responseModel.setData(null);
-            logger.error(e.toString());
+            logger.error(e.getMessage());
         }
         return ResponseEntity.ok(responseModel);
     }

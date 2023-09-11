@@ -4,6 +4,8 @@ import com.intern.newspaper_api.provider.DataCrawler;
 import com.intern.newspaper_api.service.IArticleService;
 import com.intern.newspaper_api.service.ICategoryService;
 import org.modelmapper.ModelMapper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -17,6 +19,8 @@ public class NewspaperApiApplication implements CommandLineRunner {
 
 	private final ICategoryService categoryService;
 	private final IArticleService articleService;
+	private static final Logger logger = LoggerFactory.getLogger(NewspaperApiApplication.class);
+
 
 	@Autowired
 	public NewspaperApiApplication(ICategoryService categoryService, IArticleService articleService) {
@@ -35,7 +39,12 @@ public class NewspaperApiApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		new DataCrawler(articleService, categoryService).categoryCrawl();
-		new DataCrawler(articleService, categoryService).articleCrawl();
+		try {
+			new DataCrawler(articleService, categoryService).categoryCrawl();
+			new DataCrawler(articleService, categoryService).articleCrawl();
+		} catch (Exception e) {
+			logger.error(e.getMessage());
+			throw new Exception("Error initializing data");
+		}
 	}
 }

@@ -23,7 +23,7 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/newspaper/article")
-@CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
+@CrossOrigin(origins = "${CORS_URL}", maxAge = 3600)
 public class ArticleController {
     private final IArticleService articleService;
     private final ICategoryService categoryService;
@@ -55,9 +55,9 @@ public class ArticleController {
             responseModel.setData(modelMapper.map(foundArticles, new TypeToken<List<ArticleModel>>(){}.getType()));
         } catch (Exception e) {
             responseModel.setStatus("error");
-            responseModel.setMessage(e.toString());
+            responseModel.setMessage(e.getMessage());
             responseModel.setData(null);
-            logger.error(e.toString());
+            logger.error(e.getMessage());
         }
         return ResponseEntity.ok(responseModel);
     }
@@ -74,7 +74,7 @@ public class ArticleController {
             responseModel.setStatus("error");
             responseModel.setMessage(e.getMessage());
             responseModel.setData(null);
-            logger.error(e.toString());// or e.getMessage()
+            logger.error(e.getMessage());// or e.getMessage()
         }
         return ResponseEntity.ok(responseModel);
     }
@@ -101,7 +101,7 @@ public class ArticleController {
             responseModel.setStatus("error");
             responseModel.setMessage(e.getMessage());
             responseModel.setData(null);
-            logger.error(e.toString());// or e.getMessage()
+            logger.error(e.getMessage());// or e.getMessage()
         }
         return ResponseEntity.ok(responseModel);
     }
