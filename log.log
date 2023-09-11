@@ -1,0 +1,60 @@
+2023-09-07T22:56:42.374+07:00  INFO 3540 --- [restartedMain] c.i.n.NewspaperApiApplication            : Starting NewspaperApiApplication using Java 19.0.2 with PID 3540 (D:\Nam4\Ky1\ThucTapTotNghiep\newspaper-api\target\classes started by vthgn in D:\Nam4\Ky1\ThucTapTotNghiep\newspaper-api)
+2023-09-07T22:56:42.378+07:00  INFO 3540 --- [restartedMain] c.i.n.NewspaperApiApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-09-07T22:56:42.482+07:00  INFO 3540 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-09-07T22:56:42.482+07:00  INFO 3540 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-09-07T22:56:43.850+07:00  INFO 3540 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-07T22:56:43.994+07:00  INFO 3540 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 126 ms. Found 2 JPA repository interfaces.
+2023-09-07T22:56:45.020+07:00  INFO 3540 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-07T22:56:45.036+07:00  INFO 3540 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-07T22:56:45.036+07:00  INFO 3540 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-07T22:56:45.140+07:00  INFO 3540 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-07T22:56:45.142+07:00  INFO 3540 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2656 ms
+2023-09-07T22:56:45.380+07:00  INFO 3540 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-07T22:56:45.448+07:00  INFO 3540 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-07T22:56:45.451+07:00  INFO 3540 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-09-07T22:56:45.645+07:00  INFO 3540 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-07T22:56:45.867+07:00  INFO 3540 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-07T22:56:45.898+07:00  INFO 3540 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-07T22:56:46.590+07:00  INFO 3540 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@a62d75a
+2023-09-07T22:56:46.595+07:00  INFO 3540 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-07T22:56:47.332+07:00  INFO 3540 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-07T22:56:49.637+07:00  INFO 3540 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-07T22:56:49.811+07:00  INFO 3540 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-07T22:56:51.065+07:00  WARN 3540 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-07T22:56:52.208+07:00  INFO 3540 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-09-07T22:56:52.312+07:00  INFO 3540 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-07T22:56:52.382+07:00  INFO 3540 --- [restartedMain] c.i.n.NewspaperApiApplication            : Started NewspaperApiApplication in 10.838 seconds (process running for 12.283)
+2023-09-07T22:58:36.569+07:00  INFO 3540 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-07T22:58:36.575+07:00  INFO 3540 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-07T22:58:36.595+07:00  INFO 3540 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-09-07T22:58:41.548+07:00  INFO 16208 --- [restartedMain] c.i.n.NewspaperApiApplication            : Starting NewspaperApiApplication using Java 19.0.2 with PID 16208 (D:\Nam4\Ky1\ThucTapTotNghiep\newspaper-api\target\classes started by vthgn in D:\Nam4\Ky1\ThucTapTotNghiep\newspaper-api)
+2023-09-07T22:58:41.551+07:00  INFO 16208 --- [restartedMain] c.i.n.NewspaperApiApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-09-07T22:58:41.684+07:00  INFO 16208 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-09-07T22:58:41.685+07:00  INFO 16208 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-09-07T22:58:43.111+07:00  INFO 16208 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-07T22:58:43.251+07:00  INFO 16208 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 127 ms. Found 2 JPA repository interfaces.
+2023-09-07T22:58:44.201+07:00  INFO 16208 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-07T22:58:44.213+07:00  INFO 16208 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-07T22:58:44.213+07:00  INFO 16208 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-07T22:58:44.300+07:00  INFO 16208 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-07T22:58:44.303+07:00  INFO 16208 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2614 ms
+2023-09-07T22:58:44.569+07:00  INFO 16208 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-07T22:58:44.662+07:00  INFO 16208 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-07T22:58:44.665+07:00  INFO 16208 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-09-07T22:58:45.088+07:00  INFO 16208 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-07T22:58:45.365+07:00  INFO 16208 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-07T22:58:45.385+07:00  INFO 16208 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-07T22:58:45.685+07:00  INFO 16208 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@a62d75a
+2023-09-07T22:58:45.687+07:00  INFO 16208 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-07T22:58:46.127+07:00  INFO 16208 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-07T22:58:47.356+07:00  INFO 16208 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-07T22:58:47.458+07:00  INFO 16208 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-07T22:58:48.070+07:00  WARN 16208 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-07T22:58:48.678+07:00  INFO 16208 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-09-07T22:58:48.755+07:00  INFO 16208 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-07T22:58:48.782+07:00  INFO 16208 --- [restartedMain] c.i.n.NewspaperApiApplication            : Started NewspaperApiApplication in 8.14 seconds (process running for 9.596)
+2023-09-07T22:59:36.366+07:00  INFO 16208 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (1 addition, 1 deletion, 1 modification)
+2023-09-07T22:59:36.402+07:00  INFO 16208 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-09-07T22:59:36.422+07:00  INFO 16208 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-07T22:59:36.430+07:00  INFO 16208 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-07T22:59:36.455+07:00  INFO 16208 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

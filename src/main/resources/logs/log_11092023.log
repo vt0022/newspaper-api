@@ -1,0 +1,175 @@
+2023-09-11 08:26:45 [http-nio-8080-exec-9] ERROR c.i.n.controller.ArticleController - java.util.NoSuchElementException: No value present
+2023-09-11 08:32:32 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.NoClassDefFoundError: com/intern/newspaper_api/service/ICategoryService
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3429)
+	at java.base/java.lang.Class.getDeclaredConstructors(Class.java:2608)
+	at org.springframework.boot.BeanDefinitionLoader.hasNoConstructors(BeanDefinitionLoader.java:293)
+	at org.springframework.boot.BeanDefinitionLoader.isEligible(BeanDefinitionLoader.java:285)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:160)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:136)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:129)
+	at org.springframework.boot.SpringApplication.load(SpringApplication.java:679)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:414)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.intern.newspaper_api.NewspaperApiApplication.main(NewspaperApiApplication.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.ClassNotFoundException: com.intern.newspaper_api.service.ICategoryService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 17 common frames omitted
+2023-09-11 08:32:41 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.intern.newspaper_api.NewspaperApiApplication required a bean of type 'com.intern.newspaper_api.service.ICategoryService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.intern.newspaper_api.service.ICategoryService' in your configuration.
+
+2023-09-11 08:32:44 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.intern.newspaper_api.NewspaperApiApplication required a bean of type 'com.intern.newspaper_api.service.ICategoryService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.intern.newspaper_api.service.ICategoryService' in your configuration.
+
+2023-09-11 08:33:12 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.intern.newspaper_api.NewspaperApiApplication required a bean of type 'com.intern.newspaper_api.service.ICategoryService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.intern.newspaper_api.service.ICategoryService' in your configuration.
+
+2023-09-11 08:33:19 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.intern.newspaper_api.NewspaperApiApplication required a bean of type 'com.intern.newspaper_api.service.ICategoryService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.intern.newspaper_api.service.ICategoryService' in your configuration.
+
+2023-09-11 08:33:36 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.intern.newspaper_api.NewspaperApiApplication required a bean of type 'com.intern.newspaper_api.service.ICategoryService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.intern.newspaper_api.service.ICategoryService' in your configuration.
+
+2023-09-11 08:34:10 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.intern.newspaper_api.NewspaperApiApplication required a bean of type 'com.intern.newspaper_api.service.ICategoryService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.intern.newspaper_api.service.ICategoryService' in your configuration.
+
+2023-09-11 08:34:51 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.intern.newspaper_api.NewspaperApiApplication required a bean of type 'com.intern.newspaper_api.service.ICategoryService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.intern.newspaper_api.service.ICategoryService' in your configuration.
+
+2023-09-11 08:37:38 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.intern.newspaper_api.NewspaperApiApplication required a bean of type 'com.intern.newspaper_api.service.ICategoryService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.intern.newspaper_api.service.ICategoryService' in your configuration.
+
+2023-09-11 08:37:58 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.intern.newspaper_api.NewspaperApiApplication required a bean of type 'com.intern.newspaper_api.service.ICategoryService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.intern.newspaper_api.service.ICategoryService' in your configuration.
+
+2023-09-11 09:48:38 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.intern.newspaper_api.NewspaperApiApplication required a bean of type 'com.intern.newspaper_api.service.ICategoryService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.intern.newspaper_api.service.ICategoryService' in your configuration.
+
