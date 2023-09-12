@@ -4,6 +4,7 @@ import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.filter.OncePerRequestFilter;
@@ -13,6 +14,8 @@ import java.io.IOException;
 
 @Configuration
 public class CSPConfig {
+    @Value("${CSP_SCRIPT_URL}")
+    private String CSP_SCRIPT_URL;
 
     @Bean
     public OncePerRequestFilter addCSPHeaderFilter() {
@@ -22,8 +25,13 @@ public class CSPConfig {
                 ContentCachingResponseWrapper responseWrapper = new ContentCachingResponseWrapper(response);
 
                 // Set the CSP header
-                // Allow font from Google, image from the same origin
-                responseWrapper.setHeader("Content-Security-Policy", "default-src 'none'; font-src 'self' https://fonts.gstatic.com; img-src 'self'");
+                responseWrapper.setHeader("Content-Security-Policy",
+                        "default-src 'none'; " +
+                                "font-src 'self' https://fonts.gstatic.com; " +
+                                "img-src 'self' data:; " +
+                                "script-src 'self' "+  CSP_SCRIPT_URL + "; " +
+                                "style-src-elem 'self' " + CSP_SCRIPT_URL + "; " +
+                                "connect-src 'self' " + CSP_SCRIPT_URL );
 
                 filterChain.doFilter(request, responseWrapper);
                 responseWrapper.copyBodyToResponse();

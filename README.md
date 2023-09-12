@@ -17,5 +17,6 @@ Using PostgreSQL:
 Replace *** with **dev** or **prod** to run with **development** or **production** environment
 
 # Deployment
-Production API is deployed to **Render**
+- Development API can be accessed at: **http://localhost:8080/swagger-ui**
+- Production API is deployed to **Render** at: **https://meu-newspaper.onrender.com/swagger-ui**
 
