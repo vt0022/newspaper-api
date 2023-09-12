@@ -26,11 +26,11 @@ public class CSPConfig {
 
                 // Set the CSP header
                 responseWrapper.setHeader("Content-Security-Policy",
-                        "default-src 'none'; " +
-                                "font-src 'self' https://fonts.gstatic.com; " +
-                                "img-src 'self' data:; " +
-                                "script-src 'self' "+  CSP_SCRIPT_URL + "; " +
-                                "style-src-elem 'self' " + CSP_SCRIPT_URL + "; " +
+                        "default-src 'none' ; " +
+                                "font-src 'self' https://fonts.gstatic.com ; " +
+                                "img-src 'self' data: ; " +
+                                "script-src 'self' "+  CSP_SCRIPT_URL + " ; " +
+                                "style-src-elem 'self' " + CSP_SCRIPT_URL + " ; " +
                                 "connect-src 'self' " + CSP_SCRIPT_URL );
 
                 filterChain.doFilter(request, responseWrapper);
