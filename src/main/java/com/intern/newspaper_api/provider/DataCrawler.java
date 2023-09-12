@@ -35,7 +35,6 @@ public class DataCrawler {
         this.categoryService = categoryService;
     }
 
-    @Scheduled(cron = "0 */30 * * * ?")
     public void categoryCrawl() {
         try {
             Document doc = Jsoup.connect(Constants.ROOT_URL).get();
