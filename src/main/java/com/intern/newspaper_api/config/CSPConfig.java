@@ -27,7 +27,7 @@ public class CSPConfig {
                 // Set the CSP header
                 responseWrapper.setHeader("Content-Security-Policy",
                         "default-src 'none' ; " +
-                                "font-src 'self' https://fonts.gstatic.com ; " +
+                                "font-src * ; " +
                                 "img-src 'self' data: ; " +
                                 "script-src 'self' "+  CSP_SCRIPT_URL + " ; " +
                                 "style-src-elem 'self' " + CSP_SCRIPT_URL + " ; " +
